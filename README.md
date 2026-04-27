@@ -1,6 +1,6 @@
 # Wallbit Expenses Widget
 
-<img src="https://qmuzyruteeekpodralsd.supabase.co/storage/v1/object/public/Images/wallbit.png" alt="Wallbit logo" width="96" />
+<img src="https://qmuzyruteeekpodralsd.supabase.co/storage/v1/object/public/Images/wallbit.png" alt="Wallbit logo" width="96">
 
 An iPhone Home Screen widget for [Scriptable](https://scriptable.app/) that shows Wallbit expenses grouped by category.
 
@@ -28,7 +28,7 @@ Create the API key in Wallbit under `Settings -> API Keys`. The widget only need
 
 1. Open Scriptable on your iPhone.
 2. Create a new script named `Wallbit Expenses`.
-3. Copy the contents of `scriptable/wallbit-expenses-widget.js` into the new Scriptable script.
+3. Copy the contents of `wallbit-widget.js` into the new Scriptable script.
 4. Run the script once inside Scriptable.
 5. Paste your Wallbit API key when prompted.
 6. Add a Scriptable widget to your Home Screen.
@@ -36,9 +36,33 @@ Create the API key in Wallbit under `Settings -> API Keys`. The widget only need
 
 The medium widget is a good default. The small widget is more compact, and the large widget shows more detail.
 
+## Add the Widget to Your Home Screen
+
+After creating and running the Scriptable script once, add the widget to your Home Screen:
+
+1. Add a Scriptable widget to your Home Screen. At first, it will ask you to configure which script to run.
+
+<img src="./assets/01-unconfigured-widget.png" alt="Unconfigured Scriptable widget on the Home Screen" width="240">
+
+1. If you do not see Scriptable in the widget picker, search for `Scriptable`.
+
+<img src="./assets/02-search-scriptable.png" alt="Searching for Scriptable in the iOS widget picker" width="240">
+
+1. Choose the Scriptable `Run Script` widget size you want and tap `Add Widget`.
+
+<img src="./assets/03-add-scriptable-widget.png" alt="Adding a Scriptable Run Script widget" width="240">
+
+1. Long-press the widget, tap `Edit Widget`, and select your `Wallbit Expenses` script.
+
+<img src="./assets/04-select-script.png" alt="Selecting the Wallbit Expenses script in the widget settings" width="240">
+
+1. The widget should now render your Wallbit expenses on the Home Screen.
+
+<img src="./assets/05-widget-ready.png" alt="Wallbit Expenses widget configured on the Home Screen" width="240">
+
 ## Configuration
 
-The main options are at the top of `scriptable/wallbit-expenses-widget.js`:
+The main options are at the top of `wallbit-widget.js`:
 
 ```javascript
 const CONFIG = {
@@ -101,8 +125,13 @@ iOS Home Screen widgets are not real-time. Scriptable runs on top of WidgetKit, 
 ## Project Structure
 
 ```text
-scriptable/
-  wallbit-expenses-widget.js
+wallbit-widget.js
+assets/
+  01-unconfigured-widget.png
+  02-search-scriptable.png
+  03-add-scriptable-widget.png
+  04-select-script.png
+  05-widget-ready.png
 ```
 
 ## License

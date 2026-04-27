@@ -124,15 +124,15 @@ const CATEGORY_RULES = [
 ];
 
 const THEME = {
-  background: Color.white(),
-  card: new Color("#F2F2F7"),
-  separator: new Color("#E5E5EA"),
-  title: new Color("#111111"),
-  muted: new Color("#6E6E73"),
-  text: new Color("#1C1C1E"),
-  accent: new Color("#007AFF"),
-  positive: new Color("#34C759"),
-  warning: new Color("#D70015"),
+  background: dynamicColor("#FFFFFF", "#1C1C1E"),
+  card: dynamicColor("#F2F2F7", "#2C2C2E"),
+  separator: dynamicColor("#E5E5EA", "#3A3A3C"),
+  title: dynamicColor("#111111", "#F5F5F7"),
+  muted: dynamicColor("#6E6E73", "#A1A1A6"),
+  text: dynamicColor("#1C1C1E", "#F2F2F7"),
+  accent: dynamicColor("#007AFF", "#0A84FF"),
+  positive: dynamicColor("#34C759", "#30D158"),
+  warning: dynamicColor("#D70015", "#FF453A"),
 };
 
 const CHART_COLORS = ["#2E7DD7", "#FF8A2A", "#63BD48", "#FFD03B", "#C7C7CC", "#8E8E93"];
