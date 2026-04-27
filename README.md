@@ -1,6 +1,6 @@
 # Wallbit Expenses Widget
 
-![Wallbit logo](https://qmuzyruteeekpodralsd.supabase.co/storage/v1/object/public/Images/wallbit.png)
+<img src="https://qmuzyruteeekpodralsd.supabase.co/storage/v1/object/public/Images/wallbit.png" alt="Wallbit logo" width="96" />
 
 An iPhone Home Screen widget for [Scriptable](https://scriptable.app/) that shows Wallbit expenses grouped by category.
 
@@ -61,6 +61,23 @@ To customize categories, edit `CATEGORY_RULES`:
 ```
 
 The script searches for those keywords in transaction fields such as `type`, `external_address`, `comment`, and currency codes.
+
+## Tracked Categories
+
+The widget categorizes transactions locally with keyword rules. Current categories are:
+
+- `Transfers`: `WITHDRAWAL_LOCAL`, `transfer`, `wire`, `ACH`, `Brubank`, `MercadoPago`, `Galicia`.
+- `Travel`: `Airbnb`, hotels, bookings, hostels, lodging, flights, airlines.
+- `Developer Tools`: `Vercel`, `Railway`, `Cursor`, `OpenAI`, `ScreenStudio`, `CapCut`, `Nokia of America`, `Refero`.
+- `Transport`: `Uber`, `Cabify`, taxis, `SUBE`, metro, bus, `YPF`.
+- `Food & Coffee`: restaurants, cafes, `McDonald's`, `Havanna`, `Rapanui`, `Rodziny`, `Rufian`, `Barra Recreo`, `Up Town`, `Las Ernestinas`, `Le Utthe`, `Inner Company`.
+- `Groceries`: supermarkets and markets such as `Cencosud`, `Mercadito`, `Carrefour`, `Coto`, `Jumbo`, `Walmart`.
+- `Subscriptions`: `Spotify`, `Netflix`, `Apple`, `Google`, `YouTube`, `Claude.ai Subscription`.
+- `Shopping`: `Amazon`, `MercadoLibre`, shops, stores, `Zara`, `Ay Not Dead`.
+- `Health`: pharmacies and healthcare merchants such as `Farmacity`, pharmacy, doctor, hospital, clinic.
+- `Utilities`: electricity, gas, internet, phone, and utility/service payments.
+- `Rewards`: cashback and reward transactions such as `CASHBACK_ACCUMULATED`.
+- `Fees`: fees, commissions, and related charges.
 
 ## Security
 

@@ -23,11 +23,33 @@ const EXCLUDED_TYPE_KEYWORDS = [
 
 const CATEGORY_RULES = [
   {
-    category: "Transport",
-    keywords: ["uber", "cabify", "taxi", "lyft", "sube", "metro", "bus"],
+    category: "Transfers",
+    keywords: ["withdrawal_local", "transfer", "wire", "ach", "brubank", "mercadopago", "galicia"],
   },
   {
-    category: "Food",
+    category: "Travel",
+    keywords: ["airbnb", "hotel", "booking", "hostel", "lodging", "flight", "airline"],
+  },
+  {
+    category: "Developer Tools",
+    keywords: [
+      "vercel",
+      "railway",
+      "cursor",
+      "openai",
+      "screenstudio",
+      "lemsqzy",
+      "capcut",
+      "nokia of america",
+      "refero",
+    ],
+  },
+  {
+    category: "Transport",
+    keywords: ["uber", "cabify", "taxi", "lyft", "sube", "metro", "bus", "ypf"],
+  },
+  {
+    category: "Food & Coffee",
     keywords: [
       "restaurant",
       "restaurante",
@@ -40,31 +62,60 @@ const CATEGORY_RULES = [
       "pedidosya",
       "ifood",
       "mcdonald",
+      "havanna",
+      "rapanui",
+      "rodziny",
+      "rufian",
+      "barra recreo",
+      "up town",
+      "las ernestinas",
+      "le utthe",
+      "inner company",
     ],
   },
   {
     category: "Groceries",
-    keywords: ["super", "market", "mercado", "carrefour", "coto", "jumbo", "walmart", "grocery"],
+    keywords: [
+      "super",
+      "market",
+      "mercado",
+      "mercadito",
+      "carrefour",
+      "coto",
+      "jumbo",
+      "walmart",
+      "grocery",
+      "cencosud",
+    ],
   },
   {
     category: "Subscriptions",
-    keywords: ["spotify", "netflix", "apple", "google", "youtube", "openai", "claude", "cursor"],
+    keywords: ["spotify", "netflix", "apple", "google", "youtube", "claude.ai subscription"],
   },
   {
     category: "Shopping",
-    keywords: ["amazon", "mercadolibre", "mercado libre", "shop", "store", "tienda", "zara"],
+    keywords: [
+      "amazon",
+      "mercadolibre",
+      "mercado libre",
+      "shop",
+      "store",
+      "tienda",
+      "zara",
+      "ay not dead",
+    ],
   },
   {
     category: "Health",
-    keywords: ["farmacia", "pharmacy", "doctor", "hospital", "clinic", "clinica"],
+    keywords: ["farmacia", "farmacity", "pharmacy", "doctor", "hospital", "clinic", "clinica"],
   },
   {
     category: "Utilities",
     keywords: ["electric", "gas", "internet", "phone", "telefono", "utility", "servicio"],
   },
   {
-    category: "Transfers",
-    keywords: ["withdrawal_local", "transfer", "wire", "ach"],
+    category: "Rewards",
+    keywords: ["cashback", "cashback_accumulated", "reward"],
   },
   {
     category: "Fees",
@@ -790,7 +841,9 @@ function drawArcDots(context, center, radius, thickness, startDegrees, endDegree
 
 function getCategorySymbol(category) {
   const symbols = {
-    Food: "fork.knife",
+    "Developer Tools": "chevron.left.forwardslash.chevron.right",
+    "Food & Coffee": "fork.knife",
+    Travel: "airplane",
     Transport: "bus.fill",
     Shopping: "bag.fill",
     Groceries: "cart.fill",
@@ -798,6 +851,7 @@ function getCategorySymbol(category) {
     Health: "cross.case.fill",
     Utilities: "bolt.fill",
     Transfers: "arrow.left.arrow.right",
+    Rewards: "gift.fill",
     Fees: "creditcard.fill",
     Other: "ellipsis",
   };
