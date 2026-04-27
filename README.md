@@ -1,4 +1,4 @@
-# [Wallbit](https://www.wallbit.io/en) Expenses Widget
+# Wallbit Expenses Widget
 
 <img src="https://qmuzyruteeekpodralsd.supabase.co/storage/v1/object/public/Images/wallbit.png" alt="Wallbit logo" width="96">
 
