@@ -4,7 +4,7 @@
 
 An iPhone Home Screen widget for [Scriptable](https://scriptable.app/) that shows [Wallbit](https://www.wallbit.io/en) expenses grouped by category.
 
-The widget uses the [Wallbit](https://www.wallbit.io/en) public API, stores your API key in the iOS Keychain, and renders native-looking small, medium, and large widget layouts with a donut chart, category totals, and weekly spending bars.
+The widget uses the [Wallbit public API](https://developer.wallbit.io/docs), stores your API key in the iOS Keychain, and renders native-looking small, medium, and large widget layouts with a donut chart, category totals, and weekly spending bars.
 
 ## Features
 
