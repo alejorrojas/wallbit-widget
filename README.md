@@ -9,12 +9,9 @@ The widget uses the [Wallbit public API](https://developer.wallbit.io/docs), sto
 ## Features
 
 - Fetches completed transactions from `GET https://api.wallbit.io/api/public/v1/transactions`.
-- Stores your [Wallbit API key](https://developer.wallbit.io/docs/quickstart#create-an-api-key) securely in Scriptable's Keychain.
 - Shows expenses for the current month.
 - Groups transactions into local categories using configurable keyword rules.
 - Supports small, medium, and large widgets.
-- Adapts to iOS light and dark mode.
-- Uses WidgetKit refresh scheduling through Scriptable.
 
 ## Requirements
 
