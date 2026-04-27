@@ -108,32 +108,3 @@ The widget categorizes transactions locally with keyword rules. Current categori
 Do not paste your [Wallbit API key](https://developer.wallbit.io/docs/quickstart#create-an-api-key) into the source code.
 
 The script asks for your API key the first time it runs and saves it in the iOS Keychain using Scriptable's `Keychain` API. The key is not committed to this repository.
-
-To rotate your API key:
-
-1. Revoke the old key in [Wallbit](https://www.wallbit.io/en).
-2. Create a new [Wallbit API key](https://developer.wallbit.io/docs/quickstart#create-an-api-key) with `read` permission.
-3. Change `apiKeychainKey` in the script, or delete the old `wallbit_api_key` value from Scriptable's Keychain if you manage Keychain values manually.
-4. Run the script again and paste the new key.
-
-## Limitations
-
-[Wallbit](https://www.wallbit.io/en) transactions do not currently expose a dedicated expense category field in the public transaction response used by this widget. Categories are inferred locally from keyword rules.
-
-iOS Home Screen widgets are not real-time. Scriptable runs on top of WidgetKit, and iOS ultimately decides how often widgets refresh. This script requests a refresh every 30 minutes, but the system may delay updates to preserve battery.
-
-## Project Structure
-
-```text
-wallbit-widget.js
-assets/
-  01-unconfigured-widget.png
-  02-search-scriptable.png
-  03-add-scriptable-widget.png
-  04-select-script.png
-  05-widget-ready.png
-```
-
-## License
-
-MIT
